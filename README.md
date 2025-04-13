@@ -177,6 +177,7 @@ This provides an end-to-end solution for time series forecasting with automated 
 - A REST API for real-time model prediction requests (Checkpoint 3).
 - A simple UI to interact with time series data and view forecast results (Checkpoint 4).
 
-## Video Demo:
-[A short demo of the project flow](https://www.loom.com/share/37cfc4f2292640feafedc6786527caa2?sid=6d936079-477e-42f9-9bb7-26948819f9bb).
+## My approach:
+The full documentation of my work and the demo video is here in this [link](https://www.loom.com/share/37cfc4f2292640feafedc6786527caa2?sid=6d936079-477e-42f9-9bb7-26948819f9bb).
+
 
