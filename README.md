@@ -162,7 +162,7 @@ The API exposes the following endpoints:
 
 ##  Checkpoint 4: Simple UI & Deployment
 
-### Step 1: UI Design
+### UI Design
 - Developed a **basic user interface (UI)** using **Streamlit** to allow users to easily interact with the time series data and forecast models.
 - The UI enables users to:
   - **Upload time series data**: Users can upload a CSV file containing their time series data.
