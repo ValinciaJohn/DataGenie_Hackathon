@@ -172,8 +172,8 @@ The API exposes the following endpoints:
 
 ## Technologies used :
 
-Backend : FastAPI
-Frotend : Streamlit
+- Backend : FastAPI
+- Frotend : Streamlit
 
 ## Conclusion
 
