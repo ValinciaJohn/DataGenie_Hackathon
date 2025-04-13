@@ -7,7 +7,7 @@ The world is generating an immense amount of data every day, and one of the most
 
 The goal of this project is to develop an intelligent system for time series forecasting and anomaly detection that works efficiently and at scale.
 
-👉 **Note:** For this project, I have used the sample time series dataset provided in the problem statement.
+ **Note:** For this project, I have used the sample time series dataset provided in the problem statement.
 
 For more details, you can refer to the [Problem Statement](https://docs.google.com/document/d/1EOQDyFRSjp5oggR703sOq3dYMzdSF0NN65wACxBxNBU/edit?tab=t.0#heading=h.yywnxrulcrce).
 
@@ -15,27 +15,27 @@ For more details, you can refer to the [Problem Statement](https://docs.google.c
 
 ## Goals & Checkpoints
 
-### ✅ Checkpoint 1: Automated Model Selection
+###  Checkpoint 1: Automated Model Selection
 Develop a classifier that predicts the best forecasting model for a given time series based on the dataset's characteristics.  
 The best model is identified as the one achieving the lowest Mean Absolute Percentage Error (MAPE).
 
-### ✅ Checkpoint 2: Forecast Generation and Evaluation
+###  Checkpoint 2: Forecast Generation and Evaluation
 Use the selected model to generate forecasts for the test data and evaluate its performance using the MAPE metric.
 
-### ✅ Checkpoint 3: REST API Implementation
+### Checkpoint 3: REST API Implementation
 Build a REST API to allow users to:
 - Upload time series data
 - Get model predictions
 - View the selected model and its corresponding MAPE score
 
-### ✅ Checkpoint 4 (Bonus): Simple UI & Deployment
+###  Checkpoint 4 (Bonus): Simple UI & Deployment
 Deploy a basic user interface (UI) that enables users to:
 - Upload time series data
 - Visualize the forecast and anomaly detection results using interactive plots powered by Plotly.
 
 ---
 
-## ✅ Checkpoint 1: Automated Model Selection
+##  Checkpoint 1: Automated Model Selection
 
 ### Step 1: Data Loading and Preprocessing
 - Loaded the sample time series dataset provided in the problem statement.
@@ -54,7 +54,7 @@ Extracted essential features from the time series to help the classifier underst
 - **Skewness & Kurtosis:** Helps understand the distribution and shape of the data.
 - **Anomaly Count:** Counts data points that deviate significantly from the expected range.
 
-➡️ All extracted features were saved into a CSV file for future steps.
+➡ All extracted features were saved into a CSV file for future steps.
 
 ### Step 4: Time Series Model Training and Evaluation
 
@@ -78,17 +78,17 @@ After identifying the best model for each time series, trained multiple classifi
 - **LightGBM**
 - **CatBoost**
 
-📊 Evaluation metrics used:
+ Evaluation metrics used:
 - Accuracy
 - F1-score
 - Confusion Matrix
 - Cross-validation Mean Accuracy
 
-🔍 After comparing classifiers, **XGBoost** emerged as the best-performing classifier based on evaluation metrics.
+ After comparing classifiers, **XGBoost** emerged as the best-performing classifier based on evaluation metrics.
 
-✔️ Saved the trained XGBoost classifier as a `.pkl` file for use in the next checkpoints.
+✔ Saved the trained XGBoost classifier as a `.pkl` file for use in the next checkpoints.
 
-## ✅ Checkpoint 2: Generate Predictions and Evaluate Performance
+## Checkpoint 2: Generate Predictions and Evaluate Performance
 
 ### Step 1: Load Classifier Model and Dataset
 - Loaded the pre-trained **XGBoost classifier** saved from Checkpoint 1.
@@ -123,9 +123,9 @@ After identifying the best model for each time series, trained multiple classifi
   - MAPE score
   - Anomaly points
 
-✔️ Saved the results for the next checkpoint where they will be served via an API.
+✔ Saved the results for the next checkpoint where they will be served via an API.
 
-## ✅ Checkpoint 3: REST API Implementation
+##  Checkpoint 3: REST API Implementation
 
 ### Step 1: API Design
 - Developed a simple **REST API** using **FastAPI** to serve the predictions for uploaded time series data.
@@ -154,7 +154,7 @@ The API exposes the following endpoints:
 - The response from the API includes the **best model**, **predictions**, and **MAPE value**:
 ![image](https://github.com/user-attachments/assets/be4ff56e-9a56-4c36-a514-651edef8c1a6)
 
-## ✅ Checkpoint 4: Simple UI & Deployment
+##  Checkpoint 4: Simple UI & Deployment
 
 ### Step 1: UI Design
 - Developed a **basic user interface (UI)** using **Streamlit** to allow users to easily interact with the time series data and forecast models.
