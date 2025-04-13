@@ -125,51 +125,31 @@ After identifying the best model for each time series, trained multiple classifi
 
 ✔️ Saved the results for the next checkpoint where they will be served via an API.
 
-+------------------------+     +-----------------------+
-|                        |     |                       |
-|  Load & Preprocess Data +---->+  Feature Extraction    |
-|                        |     |                       |
-+------------------------+     +-----------------------+
-                                  |
-                                  v
-                        +-----------------------+
-                        |                       |
-                        | Split Dataset (Train,  |
-                        | Test)                  |
-                        |                       |
-                        +-----------------------+
-                                  |
-                                  v
-                        +-----------------------+
-                        |                       |
-                        | Train Classifier Model |
-                        | (Random Forest, XGBoost,|
-                        | Logistic Regression)   |
-                        |                       |
-                        +-----------------------+
-                                  |
-                                  v
-                        +-----------------------+
-                        |                       |
-                        | Select Best Model      |
-                        |                       |
-                        +-----------------------+
-                                  |
-                                  v
-                        +-----------------------+
-                        |                       |
-                        | Generate Predictions   |
-                        | & Evaluate with MAPE   |
-                        |                       |
-                        +-----------------------+
-                                  |
-                                  v
-                        +-----------------------+
-                        |                       |
-                        | Generate Output JSON   |
-                        |                       |
-                        +-----------------------+
+## ✅ Checkpoint 3: REST API Implementation
 
+### Step 1: API Design
+- Developed a simple **REST API** using **FastAPI** to serve the predictions for uploaded time series data.
+- The API allows users to:
+  - Upload a CSV file containing time series data.
+  - Receive the predicted best model for the data.
+  - Get the forecasted values along with the MAPE score for evaluation.
+  - View the anomalies detected in the data.
 
+### Step 2: Implementing the API Endpoints
+The API exposes the following endpoints:
+- **POST `/predict`**:
+  - **Input**: CSV file with time series data.
+  - **Output**: JSON response containing:
+    - Forecasting model used.
+    - Predictions.
+    - MAPE score.
+    - Anomalies detected in the data.
 
+### Step 3: Testing with Postman
+- Used **Postman** for testing the API:
+  - Sent **POST requests** to the `/predict` endpoint by uploading CSV files.
+  - Received JSON responses with the forecast results and anomaly detections.
+
+### Step 4: API Response Example
+- The response from the API includes the **best model**, **predictions**, and **MAPE value**:
 
