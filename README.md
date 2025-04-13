@@ -125,5 +125,51 @@ After identifying the best model for each time series, trained multiple classifi
 
 ✔️ Saved the results for the next checkpoint where they will be served via an API.
 
++------------------------+     +-----------------------+
+|                        |     |                       |
+|  Load & Preprocess Data +---->+  Feature Extraction    |
+|                        |     |                       |
++------------------------+     +-----------------------+
+                                  |
+                                  v
+                        +-----------------------+
+                        |                       |
+                        | Split Dataset (Train,  |
+                        | Test)                  |
+                        |                       |
+                        +-----------------------+
+                                  |
+                                  v
+                        +-----------------------+
+                        |                       |
+                        | Train Classifier Model |
+                        | (Random Forest, XGBoost,|
+                        | Logistic Regression)   |
+                        |                       |
+                        +-----------------------+
+                                  |
+                                  v
+                        +-----------------------+
+                        |                       |
+                        | Select Best Model      |
+                        |                       |
+                        +-----------------------+
+                                  |
+                                  v
+                        +-----------------------+
+                        |                       |
+                        | Generate Predictions   |
+                        | & Evaluate with MAPE   |
+                        |                       |
+                        +-----------------------+
+                                  |
+                                  v
+                        +-----------------------+
+                        |                       |
+                        | Generate Output JSON   |
+                        |                       |
+                        +-----------------------+
+
+
 
 
