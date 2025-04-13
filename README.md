@@ -166,10 +166,11 @@ The API exposes the following endpoints:
 
 ## Conclusion
 
-This project provides an end-to-end solution for time series forecasting with automated model selection, anomaly detection, and a user-friendly interface. It allows businesses to efficiently choose the best forecasting model for their data and visualize the results interactively. The implementation covers:
+This provides an end-to-end solution for time series forecasting with automated model selection, anomaly detection, and a user-friendly interface. It allows businesses to efficiently choose the best forecasting model for their data and visualize the results interactively. The implementation covers:
 - Automated model selection and prediction generation (Checkpoint 1 and 2).
 - A REST API for real-time model prediction requests (Checkpoint 3).
 - A simple UI to interact with time series data and view forecast results (Checkpoint 4).
 
-
+## Video Demo:
+[A short demo of the project flow](https://www.loom.com/share/37cfc4f2292640feafedc6786527caa2?sid=6d936079-477e-42f9-9bb7-26948819f9bb).
 
