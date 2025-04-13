@@ -154,3 +154,22 @@ The API exposes the following endpoints:
 - The response from the API includes the **best model**, **predictions**, and **MAPE value**:
 ![image](https://github.com/user-attachments/assets/be4ff56e-9a56-4c36-a514-651edef8c1a6)
 
+## ✅ Checkpoint 4: Simple UI & Deployment
+
+### Step 1: UI Design
+- Developed a **basic user interface (UI)** using **Streamlit** to allow users to easily interact with the time series data and forecast models.
+- The UI enables users to:
+  - **Upload time series data**: Users can upload a CSV file containing their time series data.
+  - **View forecasted values and anomalies**: The interface displays the predicted values from the best forecasting model and highlights any anomalies detected in the dataset.
+  - **Interact with the forecast data via Plotly graph**: The interface includes an interactive **Plotly** graph that allows users to visualize the forecasted values along with the actual values, as well as anomalies.
+ ![image](https://github.com/user-attachments/assets/6340dfa7-0d6e-4a63-b925-692f8d43f275)
+
+## Conclusion
+
+This project provides an end-to-end solution for time series forecasting with automated model selection, anomaly detection, and a user-friendly interface. It allows businesses to efficiently choose the best forecasting model for their data and visualize the results interactively. The implementation covers:
+- Automated model selection and prediction generation (Checkpoint 1 and 2).
+- A REST API for real-time model prediction requests (Checkpoint 3).
+- A simple UI to interact with time series data and view forecast results (Checkpoint 4).
+
+
+
