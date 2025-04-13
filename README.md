@@ -37,6 +37,9 @@ Deploy a basic user interface (UI) that enables users to:
 
 ##  Checkpoint 1: Automated Model Selection
 
+![image](https://github.com/user-attachments/assets/a4864c3c-a18a-4a12-8a92-0b4b616fbf3d)
+
+
 ### Step 1: Data Loading and Preprocessing
 - Loaded the sample time series dataset provided in the problem statement.
 - Performed data cleaning to handle missing values and inconsistencies.
@@ -89,6 +92,9 @@ After identifying the best model for each time series, trained multiple classifi
 ✔ Saved the trained XGBoost classifier as a `.pkl` file for use in the next checkpoints.
 
 ## Checkpoint 2: Generate Predictions and Evaluate Performance
+
+![image](https://github.com/user-attachments/assets/f40204c2-b64c-42e2-a3bf-bc853350d417)
+
 
 ### Step 1: Load Classifier Model and Dataset
 - Loaded the pre-trained **XGBoost classifier** saved from Checkpoint 1.
