@@ -170,6 +170,11 @@ The API exposes the following endpoints:
   - **Interact with the forecast data via Plotly graph**: The interface includes an interactive **Plotly** graph that allows users to visualize the forecasted values along with the actual values, as well as anomalies.
  ![image](https://github.com/user-attachments/assets/6340dfa7-0d6e-4a63-b925-692f8d43f275)
 
+## Technologies used :
+
+Backend : FastAPI
+Frotend : Streamlit
+
 ## Conclusion
 
 This provides an end-to-end solution for time series forecasting with automated model selection, anomaly detection, and a user-friendly interface. It allows businesses to efficiently choose the best forecasting model for their data and visualize the results interactively. The implementation covers:
