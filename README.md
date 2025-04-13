@@ -152,4 +152,5 @@ The API exposes the following endpoints:
 
 ### Step 4: API Response Example
 - The response from the API includes the **best model**, **predictions**, and **MAPE value**:
+![image](https://github.com/user-attachments/assets/be4ff56e-9a56-4c36-a514-651edef8c1a6)
 
