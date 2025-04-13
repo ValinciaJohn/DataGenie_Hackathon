@@ -88,3 +88,42 @@ After identifying the best model for each time series, trained multiple classifi
 
 ✔️ Saved the trained XGBoost classifier as a `.pkl` file for use in the next checkpoints.
 
+## ✅ Checkpoint 2: Generate Predictions and Evaluate Performance
+
+### Step 1: Load Classifier Model and Dataset
+- Loaded the pre-trained **XGBoost classifier** saved from Checkpoint 1.
+- Imported the extracted features CSV file to use for predicting the best forecasting model for new time series data.
+
+### Step 2: Predict the Best Time Series Model
+- Used the XGBoost classifier to predict the most suitable time series forecasting model for each series in the dataset.
+- The model selection is based on the characteristics (features) extracted in Checkpoint 1.
+- Printed the selected models for verification.
+
+### Step 3: Train-Test Split
+- For each time series, split the data into training and testing sets to validate forecasting performance.
+- Training data was used to fit the selected model, and testing data was used to evaluate predictions.
+
+### Step 4: Generate Forecasts
+- Applied the selected forecasting model (Naive, Holt-Winters, or ARIMA) to the training data.
+- Generated future predictions on the test data.
+
+### Step 5: Evaluate Forecasting Performance
+- Calculated the **Mean Absolute Percentage Error (MAPE)** between the predicted and actual values.
+- MAPE helps evaluate the accuracy of the forecast by measuring the average absolute percentage difference.
+
+### Step 6: Anomaly Detection
+- Compared the forecasted values with the actual observations.
+- Identified anomalies as points where the deviation between the actual and forecasted values exceeded a threshold.
+- Marked anomalies for potential further analysis.
+
+### Step 7: Prepare Output
+- Compiled the following results:
+  - Selected forecasting model
+  - Forecasted values
+  - MAPE score
+  - Anomaly points
+
+✔️ Saved the results for the next checkpoint where they will be served via an API.
+
+
+
